@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+section {
+    height: 100%;
+}
+
+section#proyecto {
+    width: 0;
+    height: 0;
+}
+
+section#informacionPersonal {
+    background-color: #ededed;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+section#informacionPersonal .datos1 {
+    width: 40%;
+    float: left;
+    text-align: right;
+    padding: 10px;
+}
+
+section#informacionPersonal .fotoPerfil {
+    width: 20%;
+    float: left;
+    text-align: center;
+    padding: 10px;
+}
+
+section#informacionPersonal .fotoPerfil img {
+    border: 7px solid white;
+    border-radius: 15px;
+}
+
+section#informacionPersonal .datos2 {
+    width: 40%;
+    float: left;
+    text-align: left;
+    padding: 10px;
+}
+
+section#informacionPersonal h2 {
+    font-size: 44px;
+    text-align: center;
+}
+
+section#informacionPersonal h4 {
+    font-size: 20px;
+    margin: 32px 0px 2px;
+}
+
+section#informacionPersonal h5 {
+    font-size: 20px;
+    color: #969696;
+}
+
+section#informacionPersonal .presentacion {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #969696;
+    padding-left: 22%;
+    padding-right: 22%;
+    padding-top: 2%;
+}
+
+section#informacionPersonal .btn {
+    background-color: #0d6efd;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+section#informacionPersonal .btn:hover {
+    background-color: #004cbe;
+}
+
+section#idiomas .progress {
+    width: 400px;
+}
+
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 44px;
+    text-align: center;
+}
+
+section#educacion {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+section#educacion h2 {
+    font-size: 44px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+section#educacion h3 {
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #ededed;
+}
+
+section#educacion h4 {
+    padding-bottom: 5px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+section#idiomas {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+/* EXPERIENCIA */
+section#experienciaLaboral {
+    background-color: #ededed;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.experience__content {
+    display: flex;
+}
+
+.experience__time {
+    padding-right: 1rem;
+}
+
+.experience__rounder {
+    position: relative;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: #707070;
+    border-radius: 50%;
+    margin-top: .25rem;
+}
+
+.experience__line {
+    display: block;
+    width: 2px;
+    height: 100%;
+    background-color: #707070;
+    transform: translate(7px, 0);
+}
+
+.experience__data {
+    gap: .5rem;
+}
+
+.experience__title {
+    font-size: 24px;
+}
+
+.experience__company {
+    font-size: 16px;
+    color: #969696;
+}
+
+/*FIN EXPERIENCIA*/
+
+.proyecto__titulo {
+    text-align: center;
+    padding: 30px;
+}
+
+.proyecto-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.proyecto-detalle {
+    border: 5px solid #969696;
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px;
+}
+
+.proyecto-detalle img {
+    width: 100%;
+}
+
+.proyecto__numero {
+    text-align: center;
+    margin: 1rem;
+}
+
+.proyecto__descripcion {
+    padding: 1rem;
+}
+
+.proyecto__enlace {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+section#contacto {
+    background-color: #ededed;
+    padding: 30px;
+}
+
+.contacto__titulo {
+    text-align: center;
+    font-size: 44px;
+    padding-bottom: 1.5rem;
+}
+
+/** FORMULARIO **/
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #969696;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #505050;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+@media screen and (max-width: 768px) {
+    section#informacionPersonal .datos1,
+    section#informacionPersonal .datos2,
+    section#informacionPersonal .fotoPerfil{
+      width: 100%;
+      text-align: center;
+      padding: 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    section#experienciaLaboral {
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    section#idiomas {
+        width: 77%;
+        padding-left: 620px;
+    }
+}
